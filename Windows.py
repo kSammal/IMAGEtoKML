@@ -33,6 +33,6 @@ for i in range(1, len(lines)):
     longitude = parts[2].replace(' E', '')
     lines[i] = f'{parts[0]};{latitude};{longitude};{parts[3]}'
 
-# Write the updated lines back to the CSV file
-with open('coordinates.csv', 'w') as file:
+# Write the updated lines back to the TXT file
+with open('coordinates.txt', 'w') as file:
     file.writelines(lines)
